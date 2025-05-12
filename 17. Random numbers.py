@@ -17,3 +17,7 @@ print("Rock, Paper, Scissors GAME")
 options = ("Rock", "Paper", "Scissors")
 print(random.choice(options))
 
+# Shuffel the cards
+cards = ["1","4","2","6","7","9","A","K","J","Q"]
+random.shuffle(cards)
+print(cards)
