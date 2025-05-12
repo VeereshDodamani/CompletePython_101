@@ -28,3 +28,40 @@ print("\n")
 print("Changing the value of a key")
 capitals.update({"USA":"Detroit"})
 print(capitals)
+print("\n")
+
+# Remove the last element
+print("Remove the last element")
+capitals.popitem()
+print(capitals)
+print("\n")
+
+# Remove the particular element
+print("Remove the particular element")
+capitals.pop("China")
+print(capitals)
+print("\n")
+
+# Print all the key present in the dictionary
+print("Print all the key present in the dictionary")
+print(capitals.keys())
+print("Using for loop to get keys ")
+for i in capitals.keys():
+    print(i)
+print("\n")
+
+# Print all the values present in the dictionary
+print("Print all the values present in the dictionary")
+print(capitals.values())
+print("Using for loop to get values  ")
+for i in capitals.values():
+    print(i)
+print("\n")
+
+
+
+# Clear the dictionary
+print("Clear the dictionary")
+capitals.clear()
+print(capitals)
+print("\n")
