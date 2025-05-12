@@ -1,4 +1,4 @@
-## 2D collections = elements are present in 2 dimensions, normal list, set or tuple is 1 dimensional. 
+## 2D collections = elements are present in 2 dimensions, normally list, set or tuple is 1 dimensional. 
 ##                  Collections of list/set/tuple is called as 2D collection
 
 fruits = ["apple","banana","orange","mango","pineapple"]
@@ -20,6 +20,19 @@ groceries = [fruits, veggies, meat]
 print(groceries)
 
 # changing 2D list element
+print("To select a element in 2D list, consider the row and column number of it.")
 print("Changing a 2D element")
 groceries[0][1] = "kiwi"
 print(groceries)
+
+# for loop in 2D colletion
+print("For loop in 2D collection")
+for collection in groceries:
+    print(collection)
+
+# nested loop in 2D collection
+# to select individual element 
+print("Nested loop in 2D collection")
+for collection in groceries:
+    for element in collection:
+        print(element)
