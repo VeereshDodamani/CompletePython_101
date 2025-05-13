@@ -27,3 +27,25 @@ def happy_birthday():
 happy_birthday()
 happy_birthday()
 happy_birthday()
+
+
+# parameter : data which is given as argument, when it goes to function is called parameter
+def happy_birthday(name):
+    print(f"Happy Birthday To {name}")
+    print("How old are you?")
+    print(f"Happy Birthday To {name}")
+    print("\n")
+
+
+# arguments : any data you sent to a function is called arguments
+happy_birthday("Bro")
+happy_birthday("Steve")
+happy_birthday("Jack")
+
+# You can send more than 1 argument also
+def age_printing(nam, age):
+    print(f"Hello, {nam}")
+    print(f"You are {age} years old!!!")
+
+# Here I am sending name and age both
+age_printing("Rahul", 30)
