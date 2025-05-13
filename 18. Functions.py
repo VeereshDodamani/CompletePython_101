@@ -49,3 +49,15 @@ def age_printing(nam, age):
 
 # Here I am sending name and age both
 age_printing("Rahul", 30)
+
+
+## Return statement : statement used to end a function
+#                     and send a result back to the caller
+
+def total_sum(x,y):
+    total = x+y
+    return total
+
+a = float(input("Enter 1st number: "))
+b = float(input("Enter 2nd number: "))
+print(total_sum(a,b)) 
