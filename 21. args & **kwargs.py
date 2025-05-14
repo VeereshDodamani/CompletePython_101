@@ -22,3 +22,10 @@ print(add(1,2,3))
 print(add(1))
 print(add(1,2,3,4))
 print(add(1,2,3,5,6))
+
+
+def display_name(*name):
+    for nam in name:
+        print(nam, end=" ")
+
+display_name("Dr.","Hari","Prasad","III")
