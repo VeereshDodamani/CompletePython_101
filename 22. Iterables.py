@@ -42,3 +42,19 @@ print("\n")
 
 for char in reversed(name):
     print(char, end=" ")
+
+# Dict are iterables
+my_dict = {"name":"Harsh","age":"23","place":"banglore"}
+
+for key in my_dict:
+    print(key)
+print("\n")
+
+# to get values of dict
+for key in my_dict.values():
+    print(key)
+print("\n")
+
+# to get both key and values
+for key, values in my_dict.items():
+    print(f"{key} = {values}")
