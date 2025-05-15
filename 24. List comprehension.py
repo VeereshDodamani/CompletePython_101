@@ -30,3 +30,7 @@ print(pos_num)
 
 neg_num = [number for number in nums if number<0]
 print(neg_num)
+
+grades = [45,23,56,67,18,89,34,90,24,97]
+passing_grades = [grade for grade in grades if grade>36]
+print(passing_grades)
