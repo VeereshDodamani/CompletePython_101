@@ -58,3 +58,11 @@ print("\n")
 # to get both key and values
 for key, values in my_dict.items():
     print(f"{key} = {values}")
+
+
+email = "helloBro@yummy.com"
+
+if "@" in email and "." in email:
+    print(f"{email} is a VALID mail ID")
+else:
+    print(f"{email} is a NOT-VALID mail ID")
