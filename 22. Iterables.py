@@ -19,3 +19,26 @@ items = (1,2,3,4,5)
 for item in items:
     print(item, end=" ")
 print("\n")
+
+
+# Sets are iterables but cannot perform any methods such as reversed
+print("SETS")
+fruits = {"apple","banana","mango","pineapple"}
+
+for fruit in fruits:
+    print(fruit)
+print("\n")
+
+for fruit in reversed(fruits):
+    print(fruit)
+
+# String's are iterable
+print("STRINGS")
+name = "Suryansh"
+
+for char in name:
+    print(char, end=" ")
+print("\n")
+
+for char in reversed(name):
+    print(char, end=" ")
