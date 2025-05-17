@@ -47,3 +47,26 @@ def day_of_week(day):
         
 day = int(input("Enter a day number in a week: "))
 print(day_of_week(day))
+
+
+def is_weekend(day):
+    match day:
+        case "MONDAY":
+            return False
+        case "TUESDAY":
+            return False
+        case "WEDNESDAY":
+            return False
+        case "THURSDAY":
+            return False
+        case "FRIDAY":
+            return False
+        case "SATURDAY":
+            return True
+        case "SUNDAY":
+            return True
+        case _:
+            return "Not a valid day"
+        
+day = input("Enter a day number in a week: ")
+print(is_weekend(day))
