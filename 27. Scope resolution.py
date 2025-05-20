@@ -26,3 +26,22 @@ def func2():
 
 func1()
 func2()
+
+
+x = 3
+def func3():
+    print(x)
+
+def func4():
+    print(x)
+
+func3()
+func4()
+
+
+from math import e
+
+def func5():
+    print(e)
+
+func5()
