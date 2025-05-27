@@ -27,6 +27,9 @@ class Shape:
     def __init__(self, color, is_filled):
         self.color = color
         self.is_filled = is_filled
+    
+    def describe(self):
+        print(f"It is {self.color} and {'filled' if self.is_filled else 'not filled'}")
 
 class Circle(Shape):
     def __init__(self, color, is_filled, radius):
@@ -49,6 +52,7 @@ print("Circle info: ")
 print("Circle color: ",circle.color)
 print("IS filled: ",circle.is_filled)
 print("Radius of circle: ",circle.radius)
+circle.describe()
 print("\n")
 
 triangle = Triangle(color="Blue",is_filled=False, width=10, height=12)
@@ -57,3 +61,12 @@ print("Triangle color: ",triangle.color)
 print("IS filled: ",triangle.is_filled)
 print("Width of Triangle: ", triangle.width)
 print("Height of Triangle: ",triangle.height)
+triangle.describe()
+print("\n")
+
+square = Square(color="Green",is_filled=True, width=5)
+print("square info: ")
+print("square color: ",square.color)
+print("IS filled: ",square.is_filled)
+print("Width of square: ", square.width)
+square.describe()
