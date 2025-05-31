@@ -33,13 +33,19 @@ class Triangle(Shape):
     
     def area(self):
         return 0.5*self.base*self.height
-
-
+    
 # square is Square, square is Shape, but not circle, triangle
 # square have two forms : Square and Shape
 # square = Square()
 
-shapes = [Circle(4), Square(5), Triangle(4,5)]
+# Pizza is pizza, pizza is circle, pizza is shape
+# Passing Circle class bez Pizzza can be considered as circle shape
+class Pizza(Circle):
+    def __init__(self, toppings, radius):
+        self.toppings = toppings
+        super().__init__(radius)
+
+shapes = [Circle(4), Square(5), Triangle(4,5), Pizza("Mar", 15)]
 
 for shape in shapes:
-    print(f"The area of {shape.area()} cm²")
+    print(f"The area of {type(shape).__name__} is {shape.area()} cm²")
