@@ -1,6 +1,10 @@
 # Class methods : Allow methods related to the class itself
 #                 Take cls as the first parameter, which represents the class itself.
 
+# Instance method : Best for operations on instances of the class (object)
+# Static method : Best for utility class that do not need access to class data
+# Class method : Besr for class level data or require access to the class itself
+
 class Student:
     count = 0
     total_gpa = 0
