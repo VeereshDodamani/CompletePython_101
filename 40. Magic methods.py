@@ -25,3 +25,18 @@ student2 = Student("Jack",8.8)
 print(Student)
 print("Student1 gpa equal to Student 2: ",student1 == student2)
 print("Student 1 gpa less than Student 2: ",student1 > student2)
+print("\n")
+
+class Books:
+    def __init__(self,title, author, num_pages):
+        self.title = title
+        self.author = author
+        self.num_pages = num_pages
+
+    def __str__(self):
+        return f"{self.title} by {self.author}, pages={self.num_pages}"
+
+book1 = Books("My Spirit","Mr. Jk", 69)
+book2 = Books("My Soul","Ramdev", 143)
+print(book1)
+print(book2)
