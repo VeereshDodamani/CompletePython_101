@@ -16,3 +16,6 @@ except ValueError:
 # if it is 0
 except ZeroDivisionError:
     print("You can't divide by 0.")
+# finally will always be executed
+finally:
+    print("Thank you!")
